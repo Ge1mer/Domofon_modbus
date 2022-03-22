@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Домофон",
+    "manufacturer": "Ge1mer",
+    "model": "Domofon",
+    "services": [
+      {
+        "name": "Открытие",
+        "type": "LockMechanism",
+        "data": {
+          "Logic": {
+            "selected": "CurrentLockStateFromTarget"
+          }
+        },
+     "characteristics": [
+      {
+        "type": "LockTargetState",
+        "link": {
+          "type": "String",
+          "topicSearch": "/devices/(wb-domofon_[0-9]{1,3})/controls/Call accept/meta/type",
+          "topicGet": "/devices/(1)/controls/Call accept",
+          "topicSet": "/devices/(1)/controls/Call accept/on",
+          "map": {
+            "1": "0",
+            "0": "1"
+             }   
+        }
+         }
+       ]
+    },
+      {
+        "name": "Вызов",
+        "type": "Doorbell",
+        "characteristics": [
+          {
+            "type": "ProgrammableSwitchEvent",
+            "link": {
+              "type": "Integer",
+              "topicGet": "/devices/(1)/controls/Incoming call"
+          }
+        }
+      ]
+    },
+    {
+        "name": "1 Автооткрытие",
+        "type": "Switch",
+      "characteristics": [
+      {
+        "type": "On",
+        "link": {
+          "type": "Integer",
+          "topicSearch": "/devices/(wb-domofon_[0-9]{1,3})/controls/Auto open once/meta/type",
+          "topicGet": "/devices/(1)/controls/Auto open once",
+          "topicSet": "/devices/(1)/controls/Auto open once/on"
+           }
+         }
+       ]
+      },
+      {
+        "name": "Постоянное Автооткрытие",
+        "type": "Switch",
+      "characteristics": [
+      {
+        "type": "On",
+        "link": {
+          "type": "Integer",
+          "topicGet": "/devices/(1)/controls/Auto open",
+          "topicSet": "/devices/(1)/controls/Auto open/on"
+           }
+         }
+       ]
+      },
+      {
+        "name": "Атозанято",
+        "type": "Switch",
+      "characteristics": [
+      {
+        "type": "On",
+        "link": {
+          "type": "Integer",
+          "topicGet": "/devices/(1)/controls/Auto reject",
+          "topicSet": "/devices/(1)/controls/Auto reject/on"
+           }
+         }
+       ]
+      },
+      {
+        "name": "Безвучный режим однократно",
+        "type": "Switch",
+      "characteristics": [
+      {
+        "type": "On",
+        "link": {
+          "type": "Integer",
+          "topicGet": "/devices/(1)/controls/Mute once",
+          "topicSet": "/devices/(1)/controls/Mute once/on"
+           }
+         }
+       ]
+      }
+    ]
+  }
+]
+

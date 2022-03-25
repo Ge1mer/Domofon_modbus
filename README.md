@@ -25,6 +25,7 @@
 
 При использовании совместно с Wiren Board, загружаем конфиг файл [config-wb-domofon-mb.json](https://github.com/Ge1mer/Domofon_modbus/blob/main/config-wb-domofon-mb.json).
 В веб интерфейсе появляются данные платы. Параметры порта UART можно настроить для совместимости с другими устройствами на линии.
+
 ![веб интерфейс](table.png)![веб2](https://github.com/Ge1mer/Domofon_modbus/blob/3409f0bdb3394d8356fb3bfc493327403babf75d/table%20config.png)
 
 Остальные параметры позволяют настроить корректную работу с вызывной панелью домофона.

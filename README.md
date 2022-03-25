@@ -21,7 +21,8 @@
 ## Конфигурация
 Платы уже приходят прошитыми.
 Параметры порта по умолчанию: скорость 9600 бод, 8 битов, без битов четности, два стоп бита.
-Адрес Slave ID – 137.
+Адрес Slave ID – 137. Наименование платы EDMFv1.
+
 При использовании совместно с Wiren Board, загружаем конфиг файл [config-wb-domofon-mb.json](https://github.com/Ge1mer/Domofon_modbus/blob/main/config-wb-domofon-mb.json).
 В веб интерфейсе появляются данные платы. Параметры порта UART можно настроить для совместимости с другими устройствами на линии.
 ![веб интерфейс](table.png)![веб2](https://github.com/Ge1mer/Domofon_modbus/blob/3409f0bdb3394d8356fb3bfc493327403babf75d/table%20config.png)

@@ -52,3 +52,7 @@
 [Чат в Telegram](https://t.me/domofon_esp)
 
 ![Регистры модбас](https://github.com/Ge1mer/Domofon_modbus/blob/main/Registers.png)
+
+
+## Возможно использование платы с прошивкой WiFi Esphome
+Только в конфиге необходимо поменять назначение пинов GPIO12 и GPIO14. Выходная часть платы была изменена.
